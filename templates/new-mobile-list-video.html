@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="ASMR,氢听,助眠音乐. 解决失眠,睡前,睡前音乐">
+    <meta name="description" content="氢听ASMR·用声音让你放松，让你更快入眠">
+    <meta name="author" content="氢听ASMR">
+    <meta name="application-name" content="QingTing">
+    <title>氢听ASMR</title>
+    <link rel="shortcut icon" href="http://7xt0ns.com2.z0.glb.clouddn.com/image/shortcut-icon.jpg">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style type="text/css">
+html {
+        font-size: 65%;
+    }
+    
+    body {
+        font-size: 12px;
+        background-color: #555;
+        margin: 0;
+        font-family: "Microsoft YaHei" ! important;
+    }
+    
+    html,
+    body,
+    p,
+    span,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-icon {
+        margin: 10px auto 0;
+    }
+    
+    .nav-icon ul {
+        overflow: hidden;
+    }
+    
+    .nav-icon li {
+        padding: 0 0 20px 0;
+        float: left;
+        width: 25%;
+        list-style: none;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    
+    .nav-icon li img {
+        width: 50%;
+    }
+    
+    .nav-icon p {
+        font-size: 3vw;
+    }
+    
+    .titlenav {
+        width: 100%;
+        height: 40px;
+        background-color: #3c3c3c;
+    }
+    
+    .titlenav img {
+        height: 22px;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .titlenav a {
+        font-size: 15px;
+        color: #aaa;
+        vertical-align: middle;
+    }
+    
+    .radiobox {
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #00a0e9;
+        border-radius: .8rem;
+        float: right;
+        margin: 10px;
+    }
+    
+    .radiobox a {
+        font-size: 12px;
+        color: #00a0e9;
+    }
+    
+    .searchnav {
+        width: 100%;
+        height: 40px;
+        background-color: #3c3c3c;
+        margin: 1px 0 0 0;
+        line-height: 38px;
+    }
+    
+    .searchnav ul {
+        overflow: hidden;
+    }
+    
+    .searchnav li {
+        float: left;
+        width: 25%;
+        height: 40px;
+        list-style: none;
+        text-align: center;
+        box-sizing: border-box;
+        border-bottom: 4px solid;
+        border-color: #777;
+    }
+    
+    .searchnav a {
+        font-size: 18px;
+        padding: 8px 0 8px 0;
+        color: #aaa;
+    }
+    
+    .Card {
+        width: 100%;
+        background-color: #3c3c3c;
+        margin: 1px 0 0 0;
+    }
+    
+    #re-title {
+        padding: 8px;
+        font-size: 15px;
+    }
+    
+    .Card ul {
+        padding: 0 4px 4px 4px;
+        overflow: hidden;
+    }
+    
+    .Card li {
+        width: 50%;
+        padding: 0 4px 4px 4px;
+        float: left;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+    #Card-a {
+        float: right;
+        font-size: 15px;
+        color: #aaa;
+    }
+    
+    .Card img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Card p {
+        font-size: 3vw;
+        color: #dfdfdf;
+    }
+    
+    .thumbnail {
+        display: block;
+        padding: 4px;
+        margin-bottom: 3vw;
+        line-height: 1.42857143;
+        background-color: #3c3c3c;
+        border: 1px solid #666;
+        border-radius: 4px;
+        -webkit-transition: border .2s ease-in-out;
+        -o-transition: border .2s ease-in-out;
+        transition: border .2s ease-in-out
+    }
+}
+.thumbnaill a {
+    color: #d0d0d0;
+}
+footer {
+    background-color: #555:
+}
+.footer-ul {
+    overflow: hidden;
+    padding: 8px;
+}
+.footer-ul li {
+    float: left;
+    width: 33%;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+.footer-ul a {
+    color: #aaa;
+}
+.footer-text {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footer-text p {
+    color: #ddd;
+}
+.video-list {
+    width: 100%;
+    text-align: center;
+    line-height: 61px;
+}
+.video-list ul {
+    overflow: hidden;
+}
+.video-list li {
+    float: left;
+    height: 60px;
+    width: 50%;
+    list-style: none;
+    border-right: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+}
+.video-list a {
+    font-size: 16px;
+    color: #ddd;
+}
+    </style>
+</head>
+
+<body>
+    <div class="titlenav">
+        <img src="http://7xt0ns.com2.z0.glb.clouddn.com/image/titleiconnew.png">
+        <a>氢听ASMR - 分区</a>
+    </div>
+    <nav class="searchnav">
+        <ul>
+            <li><a href="http://www.qtasmr.com:5000/mobile">首页</a></li>
+            <li><a href="http://www.qtasmr.com:5000/mobile/search"> 搜索</a></li>
+            <li style="border-bottom: 4px solid;border-bottom-color:#00a0e9;"><a style="color:#fff" href="http://www.qtasmr.com:5000/mobile/list">分区</a></li>
+            <li><a href="http://www.qtasmr.com:5000/mobile/aboutlist">关于</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="video-list">
+        <ul>
+            <li><a href="http://www.qtasmr.com:5000/mobile/FQ/notaking">无人声区</a></li>
+            <li><a href="http://www.qtasmr.com:5000/mobile/FQ/ear">掏耳舔耳</a></li>
+            <li><a href="http://www.qtasmr.com:5000/mobile/FQ/hands">手势催眠</a></li>
+            <li><a href="http://www.qtasmr.com:5000/mobile/FQ/whisper">私语闲聊</a></li>
+            <li><a href="http://www.qtasmr.com:5000/mobile/FQ/tapping">敲击眠音</a></li>
+            <li><a href="http://www.qtasmr.com:5000/mobile/FQ/massage">睡前按摩</a></li>
+            <li><a href="http://www.qtasmr.com:5000/mobile/FQ/player">角色扮演</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
