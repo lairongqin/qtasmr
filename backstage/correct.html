@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>信息更正</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	* { margin: 0; padding: 0; }
+	p { margin: 0.5em 0; }
+	form img { float: left; margin-right: 10px; }
+	textarea { resize: none; overflow-y: auto; }
+	body { margin-left: 1em; }
+	li { display: block; }
+	.formItem>label { float: left; width: 120px; text-align: right; }
+	.formItem { margin: 0.5em 0; }
+	.formBotton .formItem { width: 300px; display: inline-block; }
+	.form-button { text-align: right; padding-right: 20px; }
+	.form-button button { margin: 5px; padding: 5px; }
+</style>
+<body>
+<div>
+	<form id="searchForm" method="get" action="someWhere">
+		<label>需要更改的视频编号：<input type="text" name="search" required=""></input></label>	
+		<button type="submit" form="searchForm">查找</button>
+	</form>
+	<button>新建视频</button>	
+</div>
+<p>视频编号：<span>12345</span><button>删除</button></p>
+<form id="form" method="post" action="someWhere">
+	<div class="formTop">
+		<img src="http://7xt0ns.com2.z0.glb.clouddn.com/image/thumbnail.jpg" alt="...">
+		<div class = "formItem">
+		<label for="title">Title：</label>
+		<div><input type="text" name="title" id="title" value="【ASMR】" style="width: 320px"></input></div>
+		</div>
+
+		<div class = "formItem">
+		<label for="textarea">Description：</label>
+		<div><textarea id="textarea" name="description" cols="50" rows="6"></textarea></div>
+		</div>		
+	</div>
+
+	<div class="formBotton">
+		<div class = "formItem">
+		<label for="bbSource">blibli-source：</label>
+		<div><input type="text" name="bbSource" id="bbSource"></input></div>
+		</div>
+
+		<div class = "formItem">
+		<label for="ykSource">youku-source：</label>
+		<div><input type="text"  id="ykSource" name="ykSource"></input></div>
+		</div>
+
+		<div class = "formItem">
+		<label for="ytSource">youtube-source：</label>
+		<div><input type="text" id="ytSource" name="ytSource"></input></div>
+		</div>
+		
+		<div class = "formItem">
+		<label for="author">Author：</label><div><input type="text" id="author" name="author"></input></div>
+		</div>
+
+		<div class = "formItem">
+		<label for="imgURL">image-url：</label>
+		<div><input type="text" name="imgURL" id="imgURL"></input></div>
+		</div>
+
+		<div class = "formItem">
+		<label for="tag">tag：</label>
+		<div><input type="text" id="tag" name="tag"></input></div>
+		</div>
+		
+		<div class = "formItem" style="width:100%">
+		<label>分区：</label>
+		<div>
+		<label><input type="checkbox" name="fenQu" value="1">无人声区 </label><label><input type="checkbox" name="fenQu" value="2">掏耳舔耳 </label><label><input type="checkbox" name="fenQu" value="3">手势催眠 </label><label><input type="checkbox" name="fenQu" value="4">私语闲聊 </label><label><input type="checkbox" name="fenQu" value="5">敲击眠音 </label><label><input type="checkbox" name="fenQu" value="6">睡前按摩 </label><label><input type="checkbox" name="fenQu" value="7">角色扮演 </label>		
+		</div>
+		</div>
+
+		<div class = "formItem">
+		<label for="tuijian">推荐：</label>
+		<div><label><input type="checkbox" name="tuijian" id="tuijian">推荐</label></div>
+		</div>		
+	</div>
+	
+	<div class="form-button">
+	<button type="submit" form="form">提交</button>
+	<button type="reset">取消</button>	
+	</div>
+
+</form>
+</body>
+</html>

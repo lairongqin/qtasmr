@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>backStage</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	* { margin: 0; padding: 0; }
+	html { font-family: "Microsoft YaHei" }
+	.container { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 900px; height: 500px; outline: 1px solid black; }
+	.left { float: left; height: 100%; background-color: #ede6e6; }
+	.left li { display: block; box-sizing: border-box; text-align: center; }
+	.left li:first-child { padding: 20px; }
+	.left a { display: block; padding: 20px; text-decoration: none; color: black; }
+	.left a:after { content: ""; display: block; width: 0; transition: all 0.5s; -o-transition: all 0.5s; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; }
+	.left a:hover:after { display: block; border: 1px solid black; width: 100%; }
+	.right { overflow: hidden; height: 100%; }
+	.top { height: 40px; margin: 6px; }
+	.top img { height: 30px; margin: 5px 10px; float: left; }
+	.top p { overflow: hidden; padding-left: 20px; height: 40px; line-height: 40px; }
+	iframe { width: 740px; height: 500px; border: none; }
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="left">
+		<ul id="ul">
+			<li>当前账户：<span>康乐</span></li>
+			<li><a href="servey.html" target="iframe">网页概况</a></li>
+			<li><a href="correct.html" target="iframe">信息更正</a></li>
+			<li><a href="judge.html" target="iframe">后台审核</a></li>
+			<li><a href="feedBack.html" target="iframe">反馈处理</a></li>
+			<li><a href="admin.html" target="iframe">管理员信息</a></li>
+		</ul>
+	</div>
+	<div class="right">
+		<div class="top">
+			<img src="http://7xt0ns.com2.z0.glb.clouddn.com/image/titleiconnew.png" alt="氢听">
+			<p>后台信息及审核管理界面</p>
+		</div>
+		<iframe name="iframe" scrolling="no"></iframe>
+	</div>
+	<script type="text/javascript">
+		window.onload = (function(){
+			var ul = document.getElementById('ul');
+			var a = ul.getElementsByTagName('a');
+			a = Array.prototype.slice.call(a,0);			
+			ul.addEventListener('click',function(ev){
+				var event = ev||window.event;
+				target = event.target || event.srcElement;
+				if(target.tagName === "A")
+				{
+					a.forEach(function(item,index,Array){
+						item.style.backgroundColor = "#ede6e6";
+					});
+					target.style.backgroundColor = "#d2d0d0";
+				}
+			})
+		})();
+	</script>
+</div>
+</body>
+</html>

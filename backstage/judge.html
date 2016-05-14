@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>信息更正</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	* { margin: 0; padding: 0; }
+	html { width: 740px; margin-left: 5px; }
+	form { position: relative; height: 200px; }
+	.formTop img { float: left; margin-right: 5px; width: 188px; }
+	.formTop div>label { width: 100px; float: left; text-align: right; }
+	.formBottom { display: flex; justify-content: space-around; }
+	.formItem { margin-top: 5px; }
+	textarea { resize: none; overflow-y: auto; }
+	.btn-cancel { position: absolute; right: 10px; top: 10px; padding: 3px; }
+	footer { text-align: right; padding-right: 10px; }
+	footer button { padding: 5px; }
+	</style>
+</head>
+<body>
+<form method="post" id="form1" action="somewhere">
+	<div class="formTop">
+		<img src="http://7xt0ns.com2.z0.glb.clouddn.com/image/thumbnail.jpg" alt="...">
+		<div class="formItem">
+			<label for="title">title：</label>
+			<div>
+				<input type="text" name="title" id="title">
+			</div>
+		</div>
+		<div class="formItem">
+			<label for="description">Description：</label>
+			<div>
+				<textarea name="description" id="description" cols="45"; rows="6";></textarea>
+			</div>
+		</div>
+		<button class="btn-cancel" type="button">审核不通过</button>
+	</div>
+	<div class="formBottom">
+		<div class="formItem">
+			<div>
+			<label for="author">Author：</label>			
+				<input type="text" name="author" id="author"/>
+			</div>
+		</div>
+		<div class="formItem">
+			<div>
+			<label for="imgURL">image-url：</label>
+				<input type="text" name="imgURL" id="imgURL"/>
+			</div>
+		</div>
+		<div class="formItem">
+			<div>
+			<label for="tag">tag：</label>
+				<input type="text" name="tag" id="tag"/>
+			</div>
+		</div>
+	</div>
+	<div class="formFenqu">
+		<label>分区：</label>
+		<div>
+		<label><input type="checkbox" name="fenQu" value="1">无人声区 </label><label><input type="checkbox" name="fenQu" value="2">掏耳舔耳 </label><label><input type="checkbox" name="fenQu" value="3">手势催眠 </label><label><input type="checkbox" name="fenQu" value="4">私语闲聊 </label><label><input type="checkbox" name="fenQu" value="5">敲击眠音 </label><label><input type="checkbox" name="fenQu" value="6">睡前按摩 </label><label><input type="checkbox" name="fenQu" value="7">角色扮演 </label>		
+		</div>
+	</div>
+</form>
+
+<form method="post" id="form2" action="somewhere">
+	<div class="formTop">
+		<img src="http://7xt0ns.com2.z0.glb.clouddn.com/image/thumbnail.jpg" alt="...">
+		<div class="formItem">
+			<label for="title">title：</label>
+			<div>
+				<input type="text" name="title" id="title">
+			</div>
+		</div>
+		<div class="formItem">
+			<label for="description">Description：</label>
+			<div>
+				<textarea name="description" id="description" cols="45"; rows="6";></textarea>
+			</div>
+		</div>
+		<button class="btn-cancel" type="button">审核不通过</button>
+	</div>
+	<div class="formBottom">
+		<div class="formItem">
+			<div>
+			<label for="author">Author：</label>			
+				<input type="text" name="author" id="author"/>
+			</div>
+		</div>
+		<div class="formItem">
+			<div>
+			<label for="imgURL">image-url：</label>
+				<input type="text" name="imgURL" id="imgURL"/>
+			</div>
+		</div>
+		<div class="formItem">
+			<div>
+			<label for="tag">tag：</label>
+				<input type="text" name="tag" id="tag"/>
+			</div>
+		</div>
+	</div>
+	<div class="formFenqu">
+		<label>分区：</label>
+		<div>
+		<label><input type="checkbox" name="fenQu" value="1">无人声区 </label><label><input type="checkbox" name="fenQu" value="2">掏耳舔耳 </label><label><input type="checkbox" name="fenQu" value="3">手势催眠 </label><label><input type="checkbox" name="fenQu" value="4">私语闲聊 </label><label><input type="checkbox" name="fenQu" value="5">敲击眠音 </label><label><input type="checkbox" name="fenQu" value="6">睡前按摩 </label><label><input type="checkbox" name="fenQu" value="7">角色扮演 </label>		
+		</div>
+	</div>
+</form>
+
+<footer>
+	<button type="button">提交并获取下一批</button>
+	<button type="button">取消并返回到概况</button>
+</footer>
+</body>
+</html>
