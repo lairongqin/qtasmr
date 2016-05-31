@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+		html,body {
+			width: 100%;
+			font-size: 18px;
+			font-family: "Microsoft YaHei",Arial;
+		}
+		header {
+			height: 60px;
+			line-height: 60px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: #222;
+			color:#eee;
+		}
+		.menu {
+			position: absolute;
+			top:60px;
+			left: 0;
+			width: 200px;
+			bottom: 0;
+			background-color: #f5f5f5;
+		}
+		.context {
+			position: absolute;
+			left:200px;
+			top:60px;
+			bottom: 0;
+			right: 0;
+		}
+		iframe {
+			width: 99%;
+			height: 99%;
+			overflow: auto;
+		}
+		.title {
+			margin:0 2em;
+		}
+		.admin {
+			color: #54a4e8;
+		}
+		header a{
+			position: absolute;
+			right: 2em;
+			color: #eee;
+			text-decoration: none;
+		}
+		li a{
+			display: block;
+			text-decoration: none;
+			color: #4A59E3;
+		}
+		li {
+			line-height: 40px;
+			padding-left: 1em;
+		}
+		ul {
+			margin-top: 40px;
+		}
+		.active {
+			background-color: #54a4e8;
+		}
+		.active a {
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<span class="title">氢听后台管理系统</span>当前管理员：<span class="admin">康乐</span><a href="#">使用帮助</a>
+	</header>
+	<div class="menu">
+		<ul id="ul">
+			<li><a href="quanzhan.html" target="iframe">全站概览</a></li>
+			<li><a href="videoChange.html" target="iframe">视频信息更改</a></li>
+			<li><a href="videoCheck.html" target="iframe">视频审核</a></li>
+			<li><a href="feedback.html" target="iframe">用户反馈处理</a></li>
+			<li><a href="pwd.html" target="iframe">修改个人密码</a></li>
+			<li><a href="admin.html" target="iframe">管理员信息更改</a></li>
+		</ul>
+	</div>
+	<div class="context">
+		<iframe src="" name="iframe"></iframe>		
+	</div>
+	<script type="text/javascript">
+		var ul = document.getElementById('ul');
+		ul.onclick = click;
+		function click(event) {
+			var ev = event || window.event;
+			var target = ev.target || window.srcElement;
+			if (target.tagName === 'A') {
+				var first = ul.firstElementChild;
+				while (first) {
+					first.classList.remove('active');
+					first = first.nextElementSibling;
+				}
+				target.parentNode.classList.add('active');
+			}
+		}
+	</script>
+</body>
+</html>
